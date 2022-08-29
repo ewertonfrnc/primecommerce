@@ -1,0 +1,40 @@
+.directory {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  gap: 2rem;
+}
+
+.p-card {
+  font-family: inherit;
+  position: relative;
+  box-shadow: none;
+
+  &:hover .p-card-content {
+    opacity: 1;
+  }
+}
+
+.p-card .p-card-body {
+  background-color: #f3f3f3;
+}
+
+.p-card-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: 0.2s;
+}
+
+.p-card .p-card-title {
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+.p-card .p-card-subtitle {
+  font-weight: 600;
+  color: #333;
+  font-size: 1.5rem;
+}

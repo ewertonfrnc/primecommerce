@@ -1,0 +1,38 @@
+.hero {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0)
+    ),
+    url('https://www.w3schools.com/w3images/jeans.jpg');
+  background-size: cover;
+  background-position: center;
+
+  padding: 4rem 2rem;
+  height: 60rem;
+  color: #fff;
+  text-transform: uppercase;
+
+  &__title {
+    font-size: 6.4rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+  }
+
+  &__subtitle {
+    font-size: 3.6rem;
+    margin-bottom: 4rem;
+  }
+}
+
+.p-button {
+  font-family: inherit;
+  font-size: 1.8rem;
+  background-color: #333;
+  border: none;
+  padding: 2rem 4rem;
+
+  &-label {
+    font-weight: 400;
+  }
+}
